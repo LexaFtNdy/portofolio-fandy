@@ -406,17 +406,22 @@ body.cursor-hover #cursor-ring {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 120px;
-  background: linear-gradient(to bottom, var(--bg-hero), var(--bg-about));
-  pointer-events: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.15;
 }
 
 .about::after {
   content: '';
   position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 120px;
-  background: linear-gradient(to bottom, var(--bg-about), var(--bg-work));
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 80px,
+    rgba(201, 169, 110, 0.012) 80px,
+    rgba(201, 169, 110, 0.012) 81px
+  );
   pointer-events: none;
 }
 
@@ -495,19 +500,12 @@ body.cursor-hover #cursor-ring {
 .work::after {
   content: '';
   position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 120px;
-  background: linear-gradient(to bottom, var(--bg-work), var(--bg-contact));
+  inset: 0;
+  background-image: radial-gradient(rgba(201, 169, 110, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: linear-gradient(to bottom, transparent, black 30%, black 70%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 30%, black 70%, transparent);
   pointer-events: none;
-  z-index: 0;
-}
-
-.work::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border), transparent);
 }
 
 .project-card-link {
@@ -633,6 +631,26 @@ body.cursor-hover #cursor-ring {
   padding: 10rem 0;
   min-height: 60vh;
   background: var(--bg-contact);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%; transform: translateX(-50%);
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(201, 169, 110, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.contact::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 5%, var(--accent) 50%, transparent 95%);
+  opacity: 0.12;
 }
 
 .contact-inner { text-align: center; }
@@ -693,15 +711,13 @@ body.cursor-hover #cursor-ring {
 
 .footer-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 0.72rem;
   color: var(--text-tertiary);
   font-weight: 300;
   letter-spacing: 0.02em;
 }
-
-.footer-note { font-style: italic; }
 
 /* ========================================
    RESPONSIVE — MOBILE-FIRST
