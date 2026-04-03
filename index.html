@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fandy — Software Engineer</title>
+  <meta name="description" content="Full-stack engineer focused on building reliable, scalable systems. One more." />
+  <meta name="theme-color" content="#0a0a08" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <div class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">F.</div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <div class="grain"></div>
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="scroll-progress"></div>
+
+  <nav id="nav">
+    <a href="#hero" class="nav-logo magnetic">F.</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="hero" class="section hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">
+          <span class="char">F</span><span class="char">a</span><span class="char">n</span><span class="char">d</span><span class="char">y</span><span class="char accent">.</span>
+        </h1>
+        <p class="hero-motto">"One more."</p>
+        <p class="hero-sub">When I fail, I try one more time.<br/>And again. Until it works.</p>
+        <div class="hero-scroll-hint">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <span class="section-label">01 — About</span>
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="about-line"><p class="about-line-inner about-body">Full-stack engineer based in Indonesia. I focus on building reliable, scalable systems — from multi-tenant SaaS platforms handling hundreds of concurrent users, to cross-platform desktop and mobile applications.</p></div>
+            <div class="about-line"><p class="about-line-inner about-body">I don't chase trends. I solve problems. The rest is noise.</p></div>
+          </div>
+          <div class="about-stack">
+            <p class="stack-label">Technologies I work with</p>
+            <div class="stack-grid">
+              <span class="stack-pill">Laravel</span>
+              <span class="stack-pill">Vue.js</span>
+              <span class="stack-pill">React</span>
+              <span class="stack-pill">TypeScript</span>
+              <span class="stack-pill">Inertia.js</span>
+              <span class="stack-pill">MySQL</span>
+              <span class="stack-pill">Tauri</span>
+              <span class="stack-pill">Capacitor</span>
+              <span class="stack-pill">Node.js</span>
+              <span class="stack-pill">Nginx</span>
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">TensorFlow</span>
+              <span class="stack-pill">Linux</span>
+              <span class="stack-pill">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section work">
+      <div class="container">
+        <span class="section-label">02 — Selected Work</span>
+
+        <a href="/projects/exsao.html" class="project-card-link">
+          <article class="project-card clickable">
+            <div class="project-index">01</div>
+            <div class="project-info">
+              <h3 class="project-title">Exsao — CBT Ecosystem <span class="view-detail">View Details →</span></h3>
+              <p class="project-desc">A complete examination ecosystem: multi-tenant SaaS server handling 600+ concurrent sessions, a Tauri-based secure desktop browser, a Capacitor-based mobile app, and a centralized super admin dashboard — all working in concert to deliver high-stakes digital exams across East Java.</p>
+              <div class="project-tags">
+                <span>Laravel</span>
+                <span>Vue.js</span>
+                <span>Tauri</span>
+                <span>Capacitor</span>
+                <span>Rust</span>
+                <span>MySQL</span>
+                <span>Multi-Tenant</span>
+              </div>
+              <span class="project-badge">Live Product — Serving 11+ Schools</span>
+            </div>
+          </article>
+        </a>
+
+        <article class="project-card">
+          <div class="project-index">02</div>
+          <div class="project-info">
+            <h3 class="project-title">SFA — Sales Force Automation</h3>
+            <p class="project-desc">Enterprise sales management platform built for internal company operations. Features salesman territory mapping with GPS visit logging, customer CRM with KTP verification, full transaction lifecycle management with installment scheduling (tenor/cicilan), automated commission calculation, and a director-level analytics dashboard for target monitoring and performance evaluation.</p>
+            <div class="project-tags">
+              <span>Laravel</span>
+              <span>Vue.js</span>
+              <span>MySQL</span>
+              <span>Geolocation</span>
+              <span>Multi-Role</span>
+            </div>
+            <span class="project-badge">Deployed — Active in Internal Company Use</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-index">03</div>
+          <div class="project-info">
+            <h3 class="project-title">NFR Vault</h3>
+            <p class="project-desc">A digital top-up and transaction management platform. Features secure payment processing, transaction history with audit trails, user wallet management, and an admin dashboard for monitoring revenue flow. Built with production-grade security including input sanitization and rate limiting.</p>
+            <div class="project-tags">
+              <span>Laravel</span>
+              <span>Vue.js</span>
+              <span>MySQL</span>
+              <span>Payment Gateway</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-index">04</div>
+          <div class="project-info">
+            <h3 class="project-title">SAO — Adaptive Attendance</h3>
+            <p class="project-desc">Automated student attendance system using computer vision. Implements a full ML pipeline with MTCNN for multi-task face detection (bounding box regression + landmark localization) and FaceNet for 128-dimensional face embedding extraction. Features adaptive monitoring that tracks attendance patterns and flags anomalies in real-time.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>TensorFlow</span>
+              <span>MTCNN</span>
+              <span>FaceNet</span>
+              <span>REST API</span>
+              <span>Desktop</span>
+            </div>
+            <span class="project-badge">Thesis Project — UPN Veteran Jawa Timur</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <span class="section-label">03 — Contact</span>
+        <h2 class="contact-heading">Let's talk<span class="accent">.</span></h2>
+        <p class="contact-sub">Currently open for opportunities.</p>
+        <a href="mailto:imamafandy04@gmail.com" class="contact-email magnetic">imamafandy04@gmail.com</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Fandy</p>
+      <p class="footer-note">Built with vanilla HTML, CSS & JS.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
