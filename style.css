@@ -9,6 +9,11 @@
   --bg-card: #0f0f0c;
   --bg-card-hover: #16160f;
 
+  --bg-hero: #08080a;
+  --bg-about: #0c0c09;
+  --bg-work: #09090d;
+  --bg-contact: #0d0b08;
+
   --accent: #c9a96e;
   --accent-dim: rgba(201, 169, 110, 0.12);
   --accent-glow: rgba(201, 169, 110, 0.06);
@@ -296,6 +301,7 @@ body.cursor-hover #cursor-ring {
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: var(--bg-hero);
 }
 
 .hero-bg-grid {
@@ -390,7 +396,29 @@ body.cursor-hover #cursor-ring {
    ABOUT
    ======================================== */
 
-.about { padding: 10rem 0; }
+.about {
+  padding: 10rem 0;
+  background: var(--bg-about);
+  position: relative;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, var(--bg-hero), var(--bg-about));
+  pointer-events: none;
+}
+
+.about::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, var(--bg-about), var(--bg-work));
+  pointer-events: none;
+}
 
 .about-grid {
   display: grid;
@@ -461,6 +489,17 @@ body.cursor-hover #cursor-ring {
 .work {
   padding: 10rem 0;
   position: relative;
+  background: var(--bg-work);
+}
+
+.work::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, var(--bg-work), var(--bg-contact));
+  pointer-events: none;
+  z-index: 0;
 }
 
 .work::before {
@@ -593,6 +632,7 @@ body.cursor-hover #cursor-ring {
 .contact {
   padding: 10rem 0;
   min-height: 60vh;
+  background: var(--bg-contact);
 }
 
 .contact-inner { text-align: center; }
