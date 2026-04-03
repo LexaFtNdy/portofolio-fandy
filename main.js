@@ -30,6 +30,7 @@ class Portfolio {
     this.setupHeroParallax();
     this.setupHeroGlow();
     this.setupMagnetic();
+    this.setupSectionParallax();
     this.animateDetailPage();
   }
 
@@ -350,6 +351,23 @@ class Portfolio {
       });
     });
   }
+
+  setupSectionParallax() {
+    document.querySelectorAll('.section-bg').forEach((bg) => {
+      const section = bg.parentElement;
+      gsap.to(bg, {
+        y: 80,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: 0.6,
+        }
+      });
+    });
+  }
+
   animateDetailPage() {
     const projectHero = document.querySelector('.project-hero');
     if (!projectHero) return;
