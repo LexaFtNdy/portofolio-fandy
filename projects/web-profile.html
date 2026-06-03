@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Profile CMS | Fandy</title>
+    <meta name="description" content="A white-label personal profile and CMS platform. Built by Fandy." />
+    <meta name="theme-color" content="#0a0a08" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/project-detail.css" />
+</head>
+
+<body>
+
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-logo">F.</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <div class="grain"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div id="scroll-progress"></div>
+
+    <nav id="nav">
+        <a href="/" class="nav-logo magnetic">F.</a>
+        <div class="nav-links">
+            <a href="/" class="nav-link">← Back</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="project-hero">
+            <div class="hero-glow"></div>
+            <div class="container">
+                <span class="section-label">Featured Project</span>
+                <h1 class="project-hero-title">Web Profile<span class="accent">.</span></h1>
+                <p class="project-hero-tagline">Personal Profile & CMS Platform</p>
+                <p class="project-hero-desc">A white-label web profile and CMS with dynamic OG meta tags, rich text
+                    rendering, and a robust admin dashboard for complete content management.</p>
+            </div>
+        </section>
+
+        <div class="container project-image-container detail-block">
+            <img src="/img/WebProfile/image.png" alt="Web Profile Screenshot" class="project-screenshot" />
+        </div>
+
+        <section class="project-detail-section">
+            <div class="container">
+                <div class="detail-block">
+                    <span class="detail-label">The Vision</span>
+                    <p class="detail-text">The goal was to create a production-ready, white-label CMS platform designed
+                        for personal web profiles that is highly customizable and easy to maintain. I wanted to build a
+                        stable, polished solution that can be seamlessly scaled for future clients.</p>
+                </div>
+                <div class="detail-block">
+                    <span class="detail-label">The Features</span>
+                    <p class="detail-text">I implemented dynamic OG meta tags to ensure social sharing works perfectly
+                        via social media. The platform handles rich text rendering accurately and delivers content
+                        blazingly fast. All of this is manageable through a secure admin dashboard.</p>
+                </div>
+                <div class="detail-block">
+                    <span class="detail-label">The Deployment</span>
+                    <p class="detail-text">The entire application is containerized with Docker and deployed on a
+                        resource-constrained VPS. I configured Caddy as a reverse-proxy to manage SSL and routing
+                        elegantly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-detail-section ecosystem-section">
+            <div class="container">
+                <span class="section-label">Tech Stack</span>
+                <div class="ecosystem-grid">
+                    <div class="eco-card">
+                        <h3 class="eco-title">Frontend & CMS</h3>
+                        <p class="eco-desc">Built with Vue.js and Tailwind CSS for a modern, responsive, and seamless
+                            user experience. Includes rich-text rendering integration.</p>
+                        <div class="eco-tags"><span>Vue.js</span><span>Nuxt</span><span>Tailwind CSS</span></div>
+                    </div>
+                    <div class="eco-card">
+                        <h3 class="eco-title">Infrastructure</h3>
+                        <p class="eco-desc">Deployed via Docker with Caddy handling reverse-proxy and automatic HTTPS,
+                            optimized for limited-resource VPS.</p>
+                        <div class="eco-tags"><span>Docker</span><span>Caddy</span><span>VPS</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Fandy</p>
+        </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

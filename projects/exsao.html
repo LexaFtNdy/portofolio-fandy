@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exsao — CBT Platform | Fandy</title>
-  <meta name="description" content="Multi-tenant Computer-Based Testing platform engineered for extreme concurrency. Built by Fandy." />
+  <meta name="description"
+    content="Multi-tenant Computer-Based Testing platform engineered for extreme concurrency. Built by Fandy." />
   <meta name="theme-color" content="#0a0a08" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/project-detail.css" />
 </head>
+
 <body>
 
   <div class="loader">
@@ -43,26 +48,41 @@
         <span class="section-label">Featured Project</span>
         <h1 class="project-hero-title">Exsao<span class="accent">.</span></h1>
         <p class="project-hero-tagline">Computer-Based Testing Platform</p>
-        <p class="project-hero-desc">A multi-tenant SaaS examination system built to handle the chaos of hundreds of students clicking "Submit" at the exact same second.</p>
+        <p class="project-hero-desc">A multi-tenant SaaS examination system built to handle the chaos of hundreds of
+          students clicking "Submit" at the exact same second.</p>
       </div>
     </section>
+
+    <div class="container project-image-container detail-block">
+      <img src="/img/Exsao/image.png" alt="Exsao Platform Screenshot" class="project-screenshot" />
+    </div>
 
     <section class="project-detail-section">
       <div class="container">
 
         <div class="detail-block">
           <span class="detail-label">The Origin</span>
-          <p class="detail-text">Exsao started as a web-only exam platform commissioned by KKMI Kemenag Surabaya (Ministry of Religious Affairs). No desktop app, no mobile client — just a straightforward browser-based CBT system for their school network. I built it, delivered it, and it worked. But I saw a bigger opportunity — why build this for one institution when every school in the region faces the same problem?</p>
+          <p class="detail-text">Exsao started as a web-only exam platform commissioned by KKMI Kemenag Surabaya
+            (Ministry of Religious Affairs). No desktop app, no mobile client — just a straightforward browser-based CBT
+            system for their school network. I built it, delivered it, and it worked. But I saw a bigger opportunity —
+            why build this for one institution when every school in the region faces the same problem?</p>
         </div>
 
         <div class="detail-block">
           <span class="detail-label">The Problem</span>
-          <p class="detail-text">Schools across East Java needed a unified, reliable digital exam system. The catch? 600+ students taking exams simultaneously, auto-saving answers every few seconds, with zero tolerance for data loss. Traditional CBT solutions either crashed under load or leaked exam content. Neither was acceptable.</p>
+          <p class="detail-text">Schools across East Java needed a unified, reliable digital exam system. The catch?
+            600+ students taking exams simultaneously, auto-saving answers every few seconds, with zero tolerance for
+            data loss. Traditional CBT solutions either crashed under load or leaked exam content. Neither was
+            acceptable.</p>
         </div>
 
         <div class="detail-block">
           <span class="detail-label">The Evolution</span>
-          <p class="detail-text">I re-architected the entire codebase from a single-school web app into a multi-tenant SaaS platform. Then I built what the original never had — a Tauri-based secure desktop browser to lock down the testing environment, a Capacitor-based mobile app for flexible device support, and a centralized super admin dashboard to orchestrate everything. What started as one school's web-based exam tool now serves 11+ institutions as a full product ecosystem.</p>
+          <p class="detail-text">I re-architected the entire codebase from a single-school web app into a multi-tenant
+            SaaS platform. Then I built what the original never had — a Tauri-based secure desktop browser to lock down
+            the testing environment, a Capacitor-based mobile app for flexible device support, and a centralized super
+            admin dashboard to orchestrate everything. What started as one school's web-based exam tool now serves 11+
+            institutions as a full product ecosystem.</p>
         </div>
 
       </div>
@@ -76,10 +96,17 @@
 
           <div class="eco-card">
             <div class="eco-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
             </div>
             <h3 class="eco-title">CBT Server</h3>
-            <p class="eco-desc">Multi-tenant Laravel backend with database-per-tenant isolation. Handles concurrent exam sessions with row-level locking, bulk upserts for auto-save, and HMAC-authenticated cross-service communication.</p>
+            <p class="eco-desc">Multi-tenant Laravel backend with database-per-tenant isolation. Handles concurrent exam
+              sessions with row-level locking, bulk upserts for auto-save, and HMAC-authenticated cross-service
+              communication.</p>
             <div class="eco-tags">
               <span>Laravel</span><span>Vue.js</span><span>Inertia</span><span>MySQL</span>
             </div>
@@ -87,10 +114,24 @@
 
           <div class="eco-card">
             <div class="eco-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <rect x="9" y="9" width="6" height="6" />
+                <line x1="9" y1="1" x2="9" y2="4" />
+                <line x1="15" y1="1" x2="15" y2="4" />
+                <line x1="9" y1="20" x2="9" y2="23" />
+                <line x1="15" y1="20" x2="15" y2="23" />
+                <line x1="20" y1="9" x2="23" y2="9" />
+                <line x1="20" y1="14" x2="23" y2="14" />
+                <line x1="1" y1="9" x2="4" y2="9" />
+                <line x1="1" y1="14" x2="4" y2="14" />
+              </svg>
             </div>
             <h3 class="eco-title">Secure Desktop</h3>
-            <p class="eco-desc">Tauri-based locked browser that blocks Alt+Tab, screen capture, and unauthorized processes. Features hardware-level device fingerprinting and real-time violation tracking sent directly to the exam proctor.</p>
+            <p class="eco-desc">Tauri-based locked browser that blocks Alt+Tab, screen capture, and unauthorized
+              processes. Features hardware-level device fingerprinting and real-time violation tracking sent directly to
+              the exam proctor.</p>
             <div class="eco-tags">
               <span>Tauri</span><span>React</span><span>Rust</span><span>TypeScript</span>
             </div>
@@ -98,10 +139,16 @@
 
           <div class="eco-card">
             <div class="eco-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+              </svg>
             </div>
             <h3 class="eco-title">Mobile App</h3>
-            <p class="eco-desc">Capacitor + Vue mobile exam client with offline-first architecture. Local persistence ensures no answer is ever lost — even in areas with unstable connectivity. Syncs seamlessly when back online.</p>
+            <p class="eco-desc">Capacitor + Vue mobile exam client with offline-first architecture. Local persistence
+              ensures no answer is ever lost — even in areas with unstable connectivity. Syncs seamlessly when back
+              online.</p>
             <div class="eco-tags">
               <span>Capacitor</span><span>Vue.js</span><span>TypeScript</span><span>Ionic</span>
             </div>
@@ -109,10 +156,17 @@
 
           <div class="eco-card">
             <div class="eco-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20V10" />
+                <path d="M18 20V4" />
+                <path d="M6 20v-4" />
+              </svg>
             </div>
             <h3 class="eco-title">Super Admin</h3>
-            <p class="eco-desc">Centralized dashboard for managing the entire school network. Orchestrates collaborative multi-institution exam events, aggregates leaderboard data in real-time, and generates cross-school analytical reports.</p>
+            <p class="eco-desc">Centralized dashboard for managing the entire school network. Orchestrates collaborative
+              multi-institution exam events, aggregates leaderboard data in real-time, and generates cross-school
+              analytical reports.</p>
             <div class="eco-tags">
               <span>Laravel</span><span>Vue.js</span><span>Chart.js</span><span>HMAC Auth</span>
             </div>
@@ -150,9 +204,12 @@
     <section class="project-detail-section cta-section">
       <div class="container cta-inner">
         <h2 class="cta-heading">Want to see it in action<span class="accent">?</span></h2>
-        <p class="cta-sub">Exsao is live and actively serving schools across East Java. If you'd like a hands-on demo, I can spin up a dedicated testing tenant for you — complete with sample exams, student accounts, and the full admin dashboard.</p>
+        <p class="cta-sub">Exsao is live and actively serving schools across East Java. If you'd like a hands-on demo, I
+          can spin up a dedicated testing tenant for you — complete with sample exams, student accounts, and the full
+          admin dashboard.</p>
         <div class="cta-buttons">
-          <a href="mailto:imamafandy04@gmail.com?subject=Exsao%20Demo%20Request&body=Hi%20Fandy%2C%0A%0AI'd%20like%20to%20request%20a%20demo%20tenant%20for%20testing%20Exsao.%0A%0AName%3A%20%0ACompany%3A%20%0ARole%3A%20%0A%0AThanks!" class="cta-btn primary magnetic">
+          <a href="mailto:imamafandy04@gmail.com?subject=Exsao%20Demo%20Request&body=Hi%20Fandy%2C%0A%0AI'd%20like%20to%20request%20a%20demo%20tenant%20for%20testing%20Exsao.%0A%0AName%3A%20%0ACompany%3A%20%0ARole%3A%20%0A%0AThanks!"
+            class="cta-btn primary magnetic">
             Request Demo Access
           </a>
           <a href="https://exsao.xyz" target="_blank" rel="noopener" class="cta-btn secondary magnetic">
@@ -172,4 +229,5 @@
 
   <script type="module" src="/main.js"></script>
 </body>
+
 </html>
