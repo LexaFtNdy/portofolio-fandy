@@ -50,26 +50,26 @@ class Portfolio {
       duration: 0.6,
       ease: 'power2.out'
     })
-    .to('.loader-bar', {
-      scaleX: 1,
-      duration: 0.8,
-      ease: 'power2.inOut'
-    }, '-=0.2')
-    .to('.loader-logo', {
-      y: -20,
-      opacity: 0,
-      duration: 0.4,
-      ease: 'power3.in'
-    }, '+=0.3')
-    .to('.loader-bar', {
-      opacity: 0,
-      duration: 0.3,
-    }, '-=0.3')
-    .to(loader, {
-      yPercent: -100,
-      duration: 0.8,
-      ease: 'power4.inOut'
-    }, '-=0.1');
+      .to('.loader-bar', {
+        scaleX: 1,
+        duration: 0.8,
+        ease: 'power2.inOut'
+      }, '-=0.2')
+      .to('.loader-logo', {
+        y: -20,
+        opacity: 0,
+        duration: 0.4,
+        ease: 'power3.in'
+      }, '+=0.3')
+      .to('.loader-bar', {
+        opacity: 0,
+        duration: 0.3,
+      }, '-=0.3')
+      .to(loader, {
+        yPercent: -100,
+        duration: 0.8,
+        ease: 'power4.inOut'
+      }, '-=0.1');
   }
 
   setupLenis() {
@@ -169,21 +169,21 @@ class Portfolio {
       duration: 0.8,
       ease: 'power3.out',
     }, '-=0.6')
-    .to('.hero-motto', {
-      clipPath: 'inset(0 0 0% 0)',
-      duration: 0.8,
-      ease: 'power3.out',
-    }, '-=0.4')
-    .to('.hero-sub', {
-      clipPath: 'inset(0 0 0% 0)',
-      duration: 0.8,
-      ease: 'power3.out',
-    }, '-=0.4')
-    .to('.hero-scroll-hint', {
-      opacity: 1,
-      duration: 1,
-      ease: 'power2.out',
-    }, '-=0.2');
+      .to('.hero-motto', {
+        clipPath: 'inset(0 0 0% 0)',
+        duration: 0.8,
+        ease: 'power3.out',
+      }, '-=0.4')
+      .to('.hero-sub', {
+        clipPath: 'inset(0 0 0% 0)',
+        duration: 0.8,
+        ease: 'power3.out',
+      }, '-=0.4')
+      .to('.hero-scroll-hint', {
+        opacity: 1,
+        duration: 1,
+        ease: 'power2.out',
+      }, '-=0.2');
   }
 
   animateAbout() {
@@ -275,16 +275,16 @@ class Portfolio {
       duration: 0.8,
       ease: 'power3.out',
     }, '-=0.3')
-    .to('.contact-sub', {
-      opacity: 1,
-      duration: 0.6,
-      ease: 'power3.out',
-    }, '-=0.4')
-    .to('.contact-email', {
-      opacity: 1,
-      duration: 0.6,
-      ease: 'power3.out',
-    }, '-=0.3');
+      .to('.contact-sub', {
+        opacity: 1,
+        duration: 0.6,
+        ease: 'power3.out',
+      }, '-=0.4')
+      .to('.contact-email', {
+        opacity: 1,
+        duration: 0.6,
+        ease: 'power3.out',
+      }, '-=0.3');
   }
 
   setupHeroParallax() {
@@ -376,7 +376,8 @@ class Portfolio {
     heroTl.to('.project-hero .section-label', { opacity: 1, x: 0, duration: 0.6, ease: 'power3.out' })
       .to('.project-hero-title', { opacity: 1, y: 0, duration: 0.8, ease: 'power4.out' }, '-=0.3')
       .to('.project-hero-tagline', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.4')
-      .to('.project-hero-desc', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.3');
+      .to('.project-hero-desc', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.3')
+      .to('.project-image-container', { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, '-=0.2');
 
     gsap.set('.project-hero .section-label', { x: -30 });
     gsap.set(['.project-hero-title', '.project-hero-tagline', '.project-hero-desc'], { y: 30 });

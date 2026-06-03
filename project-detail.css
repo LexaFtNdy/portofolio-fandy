@@ -344,6 +344,8 @@
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
+  opacity: 0;
+  transform: translateY(40px);
 }
 
 .project-screenshot {
