@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         exsao: resolve(__dirname, 'projects/exsao.html'),
+        webprofile: resolve(__dirname, 'projects/web-profile.html'),
       },
     },
   },
