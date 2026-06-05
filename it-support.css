@@ -78,9 +78,10 @@
 
 .bento-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 260px;
-    gap: 0.75rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    gap: 0.4rem;
+    grid-auto-flow: dense;
 }
 
 .bento-item {
@@ -237,8 +238,8 @@
 @media (max-width: 767px) {
     .bento-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 180px;
-        gap: 0.5rem;
+        grid-auto-rows: 160px;
+        gap: 0.3rem;
     }
 
     .bento-wide {
@@ -246,7 +247,7 @@
     }
 
     .bento-tall {
-        grid-row: span 1;
+        grid-row: span 2;
     }
 
     .lightbox-prev {
@@ -261,13 +262,14 @@
 @media (min-width: 768px) {
     .bento-grid {
         grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: 280px;
+        grid-auto-rows: 220px;
+        gap: 0.4rem;
     }
 }
 
 @media (min-width: 1024px) {
     .bento-grid {
-        grid-auto-rows: 300px;
-        gap: 1rem;
+        grid-auto-rows: 250px;
+        gap: 0.5rem;
     }
 }
