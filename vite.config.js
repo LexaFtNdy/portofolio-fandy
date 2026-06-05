@@ -11,6 +11,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         exsao: resolve(__dirname, 'projects/exsao.html'),
         webprofile: resolve(__dirname, 'projects/web-profile.html'),
+        itsupport: resolve(__dirname, 'it-support.html'),
       },
     },
   },
