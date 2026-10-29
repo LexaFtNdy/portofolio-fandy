@@ -22,17 +22,21 @@ This repository is **NOT** an open-source project. It is made public strictly fo
 - **Film Grain Overlay** — Subtle texture layer for editorial feel
 - **Scroll Progress Bar** — Real-time scroll indicator
 - **Section Reveal Animations** — Staggered entrance effects on About, Work, and Contact sections
-- **Project Showcase** — Detailed cards for ExSAO (CBT SaaS), SFA (Sales Force), NFR Vault, and SAO (AI Attendance)
+- **Project Showcase** — Cards for EXSAO, SENCURA, Kaasir, Kiyura, SwiftMu Tools, a freelance madrasah platform, and SAO, with detail pages for EXSAO and the madrasah platform
+- **IT Support** — Photo showcase page with bento grid and lightbox
 - **Responsive Design** — Mobile-first with fluid typography
 
 ## Featured Projects
 
 | Project | Description | Stack |
 |---|---|---|
-| **ExSAO** | Multi-tenant CBT SaaS — 600+ concurrent sessions | Laravel, Vue, Tauri, Capacitor |
-| **SFA** | Enterprise sales force automation with GPS tracking | Laravel, Vue, MySQL |
-| **NFR Vault** | Digital top-up & transaction platform | Laravel, Vue, Payment Gateway |
-| **SAO** | AI-powered attendance with FaceNet + MTCNN | Python, TensorFlow, Desktop |
+| **EXSAO** | Online exam platform rented to schools, one VPS per school, Lexa AI assistant | Laravel, Vue, Inertia, Tauri, Capacitor, Claude API |
+| **SENCURA** | Curriculum administration for schools, paired with EXSAO | Laravel, Vue, MySQL |
+| **Kaasir** | Offline-first point of sale with license activation | Tauri, React, Express, SQLite, Flutter |
+| **Kiyura Top Up** | Robux top-up store on one Cloudflare Worker | Hono, D1, R2, React |
+| **SwiftMu Tools** | Paid SketchUp plugin with 20+ modeling tools | Ruby, Vue, Cloudflare Workers |
+| **Teacher Profile & Madrasah Admin** | Freelance profile site and school admin, later SENCURA | NestJS, Prisma, PostgreSQL, Nuxt |
+| **SAO** | Face recognition attendance (thesis) | Python, TensorFlow, MTCNN, FaceNet |
 
 ## Getting Started
 

@@ -740,6 +740,28 @@ body.cursor-hover #cursor-ring {
   color: var(--text-secondary);
 }
 
+.project-thumb {
+  order: -1;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  filter: grayscale(0.6) brightness(0.8);
+  transition: filter 0.5s var(--ease-out-expo), border-color 0.5s var(--ease-out-expo);
+}
+
+.project-card:hover .project-thumb {
+  filter: none;
+  border-color: var(--accent);
+}
+
+.project-info {
+  flex: 1;
+  min-width: 0;
+}
+
 .project-badge {
   display: inline-block;
   margin-top: 0.8rem;
@@ -956,6 +978,12 @@ body {
 
   .project-index {
     font-size: 3rem;
+  }
+
+  .project-thumb {
+    order: 0;
+    width: 260px;
+    flex-shrink: 0;
   }
 
   .hero-scroll-hint {

@@ -358,6 +358,20 @@
   transition: transform 0.5s var(--ease-out-expo);
 }
 
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
 .project-screenshot:hover {
   transform: translateY(-5px);
   border-color: var(--border-hover);

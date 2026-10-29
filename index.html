@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fandy — Software Engineer</title>
-  <meta name="description" content="Full-stack engineer focused on building reliable, scalable systems. One more." />
+  <meta name="description" content="Full-stack developer and founder of Fandika. Builds and runs EXSAO, SENCURA, Kaasir, Kiyura, and SwiftMu Tools. One more." />
   <meta name="theme-color" content="#0a0a08" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -78,9 +78,12 @@
         <div class="about-grid">
           <div class="about-text">
             <div class="about-line">
-              <p class="about-line-inner about-body">Full-stack engineer based in Indonesia. I focus on building
-                reliable, scalable systems — from multi-tenant SaaS platforms handling hundreds of concurrent users, to
-                cross-platform desktop and mobile applications.</p>
+              <p class="about-line-inner about-body">Full-stack developer based in Lamongan, East Java. Founder of
+                Fandika, where I build and run EXSAO, SENCURA, and Kaasir — and co-founder of Kiyura and SwiftMu.</p>
+            </div>
+            <div class="about-line">
+              <p class="about-line-inner about-body">Backend, frontend, deployment, payments, and the support tickets
+                that come after. Informatics graduate from UPN "Veteran" Jawa Timur.</p>
             </div>
             <div class="about-line">
               <p class="about-line-inner about-body">I don't chase trends. I solve problems. The rest is noise.</p>
@@ -90,19 +93,25 @@
             <p class="stack-label">Technologies I work with</p>
             <div class="stack-grid">
               <span class="stack-pill">Laravel</span>
+              <span class="stack-pill">Filament</span>
+              <span class="stack-pill">NestJS</span>
+              <span class="stack-pill">Hono</span>
               <span class="stack-pill">Vue.js</span>
+              <span class="stack-pill">Nuxt</span>
               <span class="stack-pill">React</span>
               <span class="stack-pill">TypeScript</span>
               <span class="stack-pill">Inertia.js</span>
               <span class="stack-pill">MySQL</span>
+              <span class="stack-pill">PostgreSQL</span>
+              <span class="stack-pill">SQLite</span>
               <span class="stack-pill">Tauri</span>
               <span class="stack-pill">Capacitor</span>
-              <span class="stack-pill">Node.js</span>
-              <span class="stack-pill">Nginx</span>
-              <span class="stack-pill">Python</span>
-              <span class="stack-pill">TensorFlow</span>
-              <span class="stack-pill">Linux</span>
+              <span class="stack-pill">Flutter</span>
+              <span class="stack-pill">Cloudflare Workers</span>
               <span class="stack-pill">Docker</span>
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">Claude API</span>
+              <span class="stack-pill">Playwright</span>
             </div>
           </div>
         </div>
@@ -118,101 +127,146 @@
           <article class="project-card clickable">
             <div class="project-index">01</div>
             <div class="project-info">
-              <h3 class="project-title">Exsao — CBT Ecosystem <span class="view-detail">View Details →</span></h3>
-              <p class="project-desc">A complete examination ecosystem: multi-tenant SaaS server handling 600+
-                concurrent sessions, a Tauri-based secure desktop browser, a Capacitor-based mobile app, and a
-                centralized super admin dashboard — all working in concert to deliver high-stakes digital exams across
-                East Java.</p>
+              <h3 class="project-title">EXSAO — Online Exam Platform <span class="view-detail">View Details →</span></h3>
+              <p class="project-desc">Exam platform rented to schools monthly. Each school gets its own VPS and
+                database, provisioned automatically after payment. Item analysis, a rule-based engine that flags
+                suspect answer keys after each exam, multi-school joint tryouts, and Lexa — a Claude API assistant
+                that drafts questions and grades essays for teacher review. Tauri desktop and Capacitor Android clients
+                with kiosk mode and screenshot blocking.</p>
               <div class="project-tags">
                 <span>Laravel</span>
                 <span>Vue.js</span>
+                <span>Inertia.js</span>
+                <span>MySQL</span>
                 <span>Tauri</span>
                 <span>Capacitor</span>
-                <span>Rust</span>
-                <span>MySQL</span>
-                <span>Multi-Tenant</span>
+                <span>Claude API</span>
               </div>
-              <span class="project-badge">Live Product — Serving 11+ Schools</span>
+              <span class="project-badge">Live Product — 600 Students in a Single Exam</span>
             </div>
+            <img src="/img/Exsao/admin-laporan.webp" alt="EXSAO exam report with item analysis" class="project-thumb" loading="lazy" />
           </article>
         </a>
 
         <article class="project-card">
           <div class="project-index">02</div>
           <div class="project-info">
-            <h3 class="project-title">SFA — Sales Force Automation</h3>
-            <p class="project-desc">Enterprise sales management platform built for internal company operations. Features
-              salesman territory mapping with GPS visit logging, customer CRM with KTP verification, full transaction
-              lifecycle management with installment scheduling (tenor/cicilan), automated commission calculation, and a
-              director-level analytics dashboard for target monitoring and performance evaluation.</p>
+            <h3 class="project-title">SENCURA — Curriculum Administration</h3>
+            <p class="project-desc">Curriculum administration for schools: yearly and semester plans from the school
+              calendar with Kemendikdasmen and Kemenag templates, grade book, report cards, attendance, teacher
+              supervision, and parent updates via WhatsApp or Telegram. Teachers keep working offline. Paired with
+              EXSAO — master data flows in, exam scores flow back.</p>
             <div class="project-tags">
               <span>Laravel</span>
               <span>Vue.js</span>
               <span>MySQL</span>
-              <span>Geolocation</span>
-              <span>Multi-Role</span>
+              <span>Offline-First</span>
             </div>
-            <span class="project-badge">Deployed — Active in Internal Company Use</span>
+            <span class="project-badge">Live Product — Fandika</span>
           </div>
+          <img src="/img/Sencura/absensi.webp" alt="SENCURA monthly attendance recap" class="project-thumb" loading="lazy" />
         </article>
 
         <article class="project-card">
           <div class="project-index">03</div>
           <div class="project-info">
-            <h3 class="project-title">NFR Vault</h3>
-            <p class="project-desc">A digital top-up and transaction management platform. Features secure payment
-              processing, transaction history with audit trails, user wallet management, and an admin dashboard for
-              monitoring revenue flow. Built with production-grade security including input sanitization and rate
-              limiting.</p>
+            <h3 class="project-title">Kaasir — Point of Sale</h3>
+            <p class="project-desc">Point of sale for shops and restaurants, sold with license activation. Shift cash
+              reports, customer credit, returns, kitchen display, table reservations, prepaid top-ups, and expiry-based
+              stock. Sales run on local SQLite without internet; a Flutter owner app pairs with the cashier PC for
+              reports. Virtualized every large list after a beta store with 8,000 products started to lag.</p>
             <div class="project-tags">
-              <span>Laravel</span>
-              <span>Vue.js</span>
-              <span>MySQL</span>
-              <span>Payment Gateway</span>
+              <span>Tauri</span>
+              <span>React</span>
+              <span>Express</span>
+              <span>SQLite</span>
+              <span>Flutter</span>
             </div>
+            <span class="project-badge">Live Product — Fandika</span>
           </div>
+          <img src="/img/Kaasir/kasir.webp" alt="Kaasir cashier screen" class="project-thumb" loading="lazy" />
         </article>
 
+        <a href="https://kiyura.my.id" target="_blank" rel="noopener" class="project-card-link">
+          <article class="project-card clickable">
+            <div class="project-index">04</div>
+            <div class="project-info">
+              <h3 class="project-title">Kiyura Top Up <span class="view-detail">kiyura.my.id ↗</span></h3>
+              <p class="project-desc">Robux top-up store on a single Cloudflare Worker serving the API and a React
+                storefront. Validates the buyer's Roblox gamepass before payment, shows queue position and delivery
+                estimates, and runs the order queue through a Telegram bot. Stock is deducted in one transaction and
+                returned when payment fails.</p>
+              <div class="project-tags">
+                <span>Hono</span>
+                <span>Cloudflare D1</span>
+                <span>R2</span>
+                <span>React</span>
+                <span>Telegram Bot</span>
+                <span>GitHub Actions</span>
+              </div>
+              <span class="project-badge">Co-founder — Live</span>
+            </div>
+            <img src="/img/Kiyura/og.webp" alt="Kiyura Top Up" class="project-thumb" loading="lazy" />
+          </article>
+        </a>
+
+        <a href="https://swiftmu.my.id" target="_blank" rel="noopener" class="project-card-link">
+          <article class="project-card clickable">
+            <div class="project-index">05</div>
+            <div class="project-info">
+              <h3 class="project-title">SwiftMu Tools <span class="view-detail">swiftmu.my.id ↗</span></h3>
+              <p class="project-desc">Paid SketchUp plugin with 20+ modeling tools for architects, with a 7-day trial
+                and QRIS licensing. Built the in-app updater with SHA-256 integrity checks, the tool hub, and several
+                tools in Ruby — plus the landing page that rebuilds on each plugin release.</p>
+              <div class="project-tags">
+                <span>Ruby</span>
+                <span>SketchUp API</span>
+                <span>Vue.js</span>
+                <span>Cloudflare Workers</span>
+              </div>
+              <span class="project-badge">Co-founder — Live</span>
+            </div>
+            <img src="/img/SwiftMu/cover.webp" alt="SwiftMu Cover Generator tool in SketchUp" class="project-thumb" loading="lazy" />
+          </article>
+        </a>
+
+        <a href="/projects/web-profile.html" class="project-card-link">
+          <article class="project-card clickable">
+            <div class="project-index">06</div>
+            <div class="project-info">
+              <h3 class="project-title">Teacher Profile &amp; Madrasah Admin <span class="view-detail">View Details →</span></h3>
+              <p class="project-desc">Freelance build: a teacher profile site plus a madrasah admin system — teaching
+                plans from the school calendar, grade book with an offline input queue, report cards, QR attendance,
+                and WhatsApp/Telegram notifications for parents. Later developed into SENCURA.</p>
+              <div class="project-tags">
+                <span>NestJS</span>
+                <span>Prisma</span>
+                <span>PostgreSQL</span>
+                <span>Nuxt</span>
+                <span>Docker</span>
+              </div>
+              <span class="project-badge">Freelance — halopakaziz.com</span>
+            </div>
+            <img src="/img/WebProfile/thumb.webp" alt="Teacher profile site" class="project-thumb" loading="lazy" />
+          </article>
+        </a>
+
         <article class="project-card">
-          <div class="project-index">04</div>
+          <div class="project-index">07</div>
           <div class="project-info">
             <h3 class="project-title">SAO — Adaptive Attendance</h3>
-            <p class="project-desc">Automated student attendance system using computer vision. Implements a full ML
-              pipeline with MTCNN for multi-task face detection (bounding box regression + landmark localization) and
-              FaceNet for 128-dimensional face embedding extraction. Features adaptive monitoring that tracks attendance
-              patterns and flags anomalies in real-time.</p>
+            <p class="project-desc">Desktop attendance app using face recognition: MTCNN for face detection and
+              FaceNet for embeddings. Rejects blurry, tilted, or off-center face photos before matching.</p>
             <div class="project-tags">
               <span>Python</span>
               <span>TensorFlow</span>
               <span>MTCNN</span>
               <span>FaceNet</span>
-              <span>REST API</span>
               <span>Desktop</span>
             </div>
-            <span class="project-badge">Thesis Project — UPN Veteran Jawa Timur</span>
+            <span class="project-badge">Thesis Project — UPN "Veteran" Jawa Timur</span>
           </div>
         </article>
-
-        <a href="/projects/web-profile.html" class="project-card-link">
-          <article class="project-card clickable">
-            <div class="project-index">05</div>
-            <div class="project-info">
-              <h3 class="project-title">Web Profile CMS <span class="view-detail">View Details →</span></h3>
-              <p class="project-desc">A white-label personal profile and CMS platform. Features a robust admin dashboard
-                for complete content management, dynamic OG meta tags for optimized social sharing, and rich text
-                rendering. Designed with a modular architecture and deployed via Docker on a resource-constrained VPS.
-              </p>
-              <div class="project-tags">
-                <span>Vue.js</span>
-                <span>Nuxt 3</span>
-                <span>Tailwind CSS</span>
-                <span>Docker</span>
-                <span>Caddy</span>
-              </div>
-              <span class="project-badge">Production — Active</span>
-            </div>
-          </article>
-        </a>
 
       </div>
     </section>

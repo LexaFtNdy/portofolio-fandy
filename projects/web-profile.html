@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Profile CMS | Fandy</title>
-    <meta name="description" content="A white-label personal profile and CMS platform. Built by Fandy." />
+    <title>Teacher Profile &amp; Madrasah Admin | Fandy</title>
+    <meta name="description" content="Teacher profile site and madrasah administration system, later developed into SENCURA. Built by Fandy." />
     <meta name="theme-color" content="#0a0a08" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,37 +52,36 @@
         <section class="project-hero">
             <div class="hero-glow"></div>
             <div class="container">
-                <span class="section-label">Featured Project</span>
-                <h1 class="project-hero-title">Web Profile<span class="accent">.</span></h1>
-                <p class="project-hero-tagline">Personal Profile & CMS Platform</p>
-                <p class="project-hero-desc">A white-label web profile and CMS with dynamic OG meta tags, rich text
-                    rendering, and a robust admin dashboard for complete content management.</p>
+                <span class="section-label">Freelance Project</span>
+                <h1 class="project-hero-title">Teacher Profile<span class="accent">.</span></h1>
+                <p class="project-hero-tagline">Profile Site &amp; Madrasah Administration</p>
+                <p class="project-hero-desc">Started as a teacher's personal profile and CMS. Grew into the admin system
+                    the madrasah runs on — and later into SENCURA.</p>
             </div>
         </section>
 
         <div class="container project-image-container">
-            <img src="/img/WebProfile/image.png" alt="Web Profile Screenshot" class="project-screenshot" />
+            <img src="/img/WebProfile/image.png" alt="Teacher Profile Screenshot" class="project-screenshot" />
         </div>
 
         <section class="project-detail-section">
             <div class="container">
                 <div class="detail-block">
-                    <span class="detail-label">The Vision</span>
-                    <p class="detail-text">The goal was to create a production-ready, white-label CMS platform designed
-                        for personal web profiles that is highly customizable and easy to maintain. I wanted to build a
-                        stable, polished solution that can be seamlessly scaled for future clients.</p>
+                    <span class="detail-label">The Start</span>
+                    <p class="detail-text">The brief was a profile site for a teacher: articles, rich text, and OG meta
+                        tags so every page shares cleanly on social media, all managed from an admin dashboard.</p>
                 </div>
                 <div class="detail-block">
-                    <span class="detail-label">The Features</span>
-                    <p class="detail-text">I implemented dynamic OG meta tags to ensure social sharing works perfectly
-                        via social media. The platform handles rich text rendering accurately and delivers content
-                        blazingly fast. All of this is manageable through a secure admin dashboard.</p>
+                    <span class="detail-label">The Growth</span>
+                    <p class="detail-text">Then the paperwork moved in. Teaching plans generated from the school
+                        calendar, a grade book with an offline input queue for flaky connections, report cards, QR
+                        attendance, and WhatsApp/Telegram notifications for parents. The madrasah's administration now
+                        runs on it.</p>
                 </div>
                 <div class="detail-block">
-                    <span class="detail-label">The Deployment</span>
-                    <p class="detail-text">The entire application is containerized with Docker and deployed on a
-                        resource-constrained VPS. I configured Caddy as a reverse-proxy to manage SSL and routing
-                        elegantly.</p>
+                    <span class="detail-label">What Came Next</span>
+                    <p class="detail-text">Every school has the same paperwork, so I rebuilt the idea as a product:
+                        SENCURA, curriculum administration paired with EXSAO.</p>
                 </div>
             </div>
         </section>
@@ -92,16 +91,27 @@
                 <span class="section-label">Tech Stack</span>
                 <div class="ecosystem-grid">
                     <div class="eco-card">
-                        <h3 class="eco-title">Frontend & CMS</h3>
-                        <p class="eco-desc">Built with Vue.js and Tailwind CSS for a modern, responsive, and seamless
-                            user experience. Includes rich-text rendering integration.</p>
-                        <div class="eco-tags"><span>Vue.js</span><span>Nuxt</span><span>Tailwind CSS</span></div>
+                        <h3 class="eco-title">Backend</h3>
+                        <p class="eco-desc">NestJS API with Prisma on PostgreSQL, handling content, school
+                            administration data, and parent notifications.</p>
+                        <div class="eco-tags"><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span></div>
+                    </div>
+                    <div class="eco-card">
+                        <h3 class="eco-title">Frontend</h3>
+                        <p class="eco-desc">Public profile site in Nuxt with server-rendered OG tags, plus a separate
+                            admin app for content and school administration.</p>
+                        <div class="eco-tags"><span>Nuxt</span><span>Vue.js</span><span>Tailwind CSS</span></div>
                     </div>
                     <div class="eco-card">
                         <h3 class="eco-title">Infrastructure</h3>
-                        <p class="eco-desc">Deployed via Docker with Caddy handling reverse-proxy and automatic HTTPS,
-                            optimized for limited-resource VPS.</p>
+                        <p class="eco-desc">Containerized with Docker on a small VPS, Caddy as reverse proxy with
+                            automatic HTTPS, and scheduled backups.</p>
                         <div class="eco-tags"><span>Docker</span><span>Caddy</span><span>VPS</span></div>
+                    </div>
+                    <div class="eco-card">
+                        <h3 class="eco-title">Integrations</h3>
+                        <p class="eco-desc">Parent updates over WhatsApp and Telegram, QR codes for attendance.</p>
+                        <div class="eco-tags"><span>WhatsApp</span><span>Telegram Bot API</span><span>QR</span></div>
                     </div>
                 </div>
             </div>
@@ -110,7 +120,7 @@
         <section class="project-detail-section cta-section">
             <div class="container cta-inner">
                 <h2 class="cta-heading">Visit the Website<span class="accent">.</span></h2>
-                <p class="cta-sub">Check out the live production version of Web Profile CMS.</p>
+                <p class="cta-sub">The public profile site is live.</p>
                 <div class="cta-buttons">
                     <a href="https://halopakaziz.com" target="_blank" rel="noopener" class="cta-btn primary magnetic">
                         Visit halopakaziz.com ↗

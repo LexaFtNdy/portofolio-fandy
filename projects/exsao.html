@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exsao — CBT Platform | Fandy</title>
+  <title>EXSAO — Online Exam Platform | Fandy</title>
   <meta name="description"
-    content="Multi-tenant Computer-Based Testing platform engineered for extreme concurrency. Built by Fandy." />
+    content="Online exam platform for schools: one server per school, Tauri and Capacitor clients, and the Lexa AI assistant. Built by Fandy." />
   <meta name="theme-color" content="#0a0a08" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,15 +56,22 @@
       <div class="hero-glow"></div>
       <div class="container">
         <span class="section-label">Featured Project</span>
-        <h1 class="project-hero-title">Exsao<span class="accent">.</span></h1>
-        <p class="project-hero-tagline">Computer-Based Testing Platform</p>
-        <p class="project-hero-desc">A multi-tenant SaaS examination system built to handle the chaos of hundreds of
-          students clicking "Submit" at the exact same second.</p>
+        <h1 class="project-hero-title">EXSAO<span class="accent">.</span></h1>
+        <p class="project-hero-tagline">Online Exam Platform for Schools</p>
+        <p class="project-hero-desc">Built to survive hundreds of students clicking "Submit" in the same second — now
+          rented to schools monthly, with one server per school.</p>
       </div>
     </section>
 
     <div class="container project-image-container">
-      <img src="/img/Exsao/image.png" alt="Exsao Platform Screenshot" class="project-screenshot" />
+      <img src="/img/Exsao/admin-dashboard.webp" alt="EXSAO admin dashboard" class="project-screenshot" />
+    </div>
+
+    <div class="container project-gallery">
+      <img src="/img/Exsao/guru-buat-soal.webp" alt="Teacher writing questions" loading="lazy" />
+      <img src="/img/Exsao/guru-analisis-butir.webp" alt="Item analysis after an exam" loading="lazy" />
+      <img src="/img/Exsao/admin-monitor-langsung.webp" alt="Live exam monitoring" loading="lazy" />
+      <img src="/img/Exsao/ujian-03-soal-pertama.webp" alt="Student exam screen" loading="lazy" />
     </div>
 
     <section class="project-detail-section">
@@ -72,27 +79,25 @@
 
         <div class="detail-block">
           <span class="detail-label">The Origin</span>
-          <p class="detail-text">Exsao started as a web-only exam platform commissioned by KKMI Kemenag Surabaya
-            (Ministry of Religious Affairs). No desktop app, no mobile client — just a straightforward browser-based CBT
-            system for their school network. I built it, delivered it, and it worked. But I saw a bigger opportunity —
-            why build this for one institution when every school in the region faces the same problem?</p>
+          <p class="detail-text">EXSAO started as the exam system for KKMI Kemenag Surabaya's joint tryout across 11
+            schools. One event, one web app, hundreds of students at once. It worked — and every school in the region
+            had the same problem.</p>
         </div>
 
         <div class="detail-block">
           <span class="detail-label">The Problem</span>
-          <p class="detail-text">Schools across East Java needed a unified, reliable digital exam system. The catch?
-            600+ students taking exams simultaneously, auto-saving answers every few seconds, with zero tolerance for
-            data loss. Traditional CBT solutions either crashed under load or leaked exam content. Neither was
-            acceptable.</p>
+          <p class="detail-text">Schools need exams that don't fall over when the whole class submits at once, don't
+            leak questions, and don't lose answers when the school Wi-Fi drops. They also need to know which questions
+            were bad after the exam, not just who scored what.</p>
         </div>
 
         <div class="detail-block">
           <span class="detail-label">The Evolution</span>
-          <p class="detail-text">I re-architected the entire codebase from a single-school web app into a multi-tenant
-            SaaS platform. Then I built what the original never had — a Tauri-based secure desktop browser to lock down
-            the testing environment, a Capacitor-based mobile app for flexible device support, and a centralized super
-            admin dashboard to orchestrate everything. What started as one school's web-based exam tool now serves 11+
-            institutions as a full product ecosystem.</p>
+          <p class="detail-text">I turned it into a product schools rent monthly. Each school gets its own VPS and
+            database, provisioned automatically after payment — usually in 10–20 minutes. Servers pull updates via
+            cron, postpone them while an exam is running, and dump the database before each migration. Around it I
+            built locked-down desktop and Android clients, an AI assistant for teachers, and one admin panel that runs
+            the whole business.</p>
         </div>
 
       </div>
@@ -113,37 +118,13 @@
                 <line x1="12" y1="17" x2="12" y2="21" />
               </svg>
             </div>
-            <h3 class="eco-title">CBT Server</h3>
-            <p class="eco-desc">Multi-tenant Laravel backend with database-per-tenant isolation. Handles concurrent exam
-              sessions with row-level locking, bulk upserts for auto-save, and HMAC-authenticated cross-service
-              communication.</p>
+            <h3 class="eco-title">Exam Server</h3>
+            <p class="eco-desc">Runs on each school's own VPS. Item analysis (difficulty, discrimination, distractors,
+              KR-20), a rule-based engine that flags suspect answer keys and misconceptions and proposes remedial
+              tests, answer key challenges with score recalculation, Word/PDF question import, and multi-school joint
+              tryouts with a combined ranking.</p>
             <div class="eco-tags">
               <span>Laravel</span><span>Vue.js</span><span>Inertia</span><span>MySQL</span>
-            </div>
-          </div>
-
-          <div class="eco-card">
-            <div class="eco-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="4" y="4" width="16" height="16" rx="2" />
-                <rect x="9" y="9" width="6" height="6" />
-                <line x1="9" y1="1" x2="9" y2="4" />
-                <line x1="15" y1="1" x2="15" y2="4" />
-                <line x1="9" y1="20" x2="9" y2="23" />
-                <line x1="15" y1="20" x2="15" y2="23" />
-                <line x1="20" y1="9" x2="23" y2="9" />
-                <line x1="20" y1="14" x2="23" y2="14" />
-                <line x1="1" y1="9" x2="4" y2="9" />
-                <line x1="1" y1="14" x2="4" y2="14" />
-              </svg>
-            </div>
-            <h3 class="eco-title">Secure Desktop</h3>
-            <p class="eco-desc">Tauri-based locked browser that blocks Alt+Tab, screen capture, and unauthorized
-              processes. Features hardware-level device fingerprinting and real-time violation tracking sent directly to
-              the exam proctor.</p>
-            <div class="eco-tags">
-              <span>Tauri</span><span>React</span><span>Rust</span><span>TypeScript</span>
             </div>
           </div>
 
@@ -155,12 +136,28 @@
                 <line x1="12" y1="18" x2="12.01" y2="18" />
               </svg>
             </div>
-            <h3 class="eco-title">Mobile App</h3>
-            <p class="eco-desc">Capacitor + Vue mobile exam client with offline-first architecture. Local persistence
-              ensures no answer is ever lost — even in areas with unstable connectivity. Syncs seamlessly when back
-              online.</p>
+            <h3 class="eco-title">Exam Clients</h3>
+            <p class="eco-desc">Tauri desktop app and Capacitor Android app with kiosk mode and screenshot blocking.
+              30-second rotating QR attendance, QR-verifiable exam documents, and local answer recovery when the
+              connection drops.</p>
             <div class="eco-tags">
-              <span>Capacitor</span><span>Vue.js</span><span>TypeScript</span><span>Ionic</span>
+              <span>Tauri</span><span>Rust</span><span>Capacitor</span><span>Vue.js</span>
+            </div>
+          </div>
+
+          <div class="eco-card">
+            <div class="eco-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3l1.9 5.8L20 10l-6.1 1.2L12 17l-1.9-5.8L4 10l6.1-1.2z" />
+                <path d="M19 17l.7 2.3L22 20l-2.3.7L19 23l-.7-2.3L16 20l2.3-.7z" />
+              </svg>
+            </div>
+            <h3 class="eco-title">Lexa</h3>
+            <p class="eco-desc">Claude API assistant that drafts questions, test blueprints, and explanations, checks
+              answer keys, and grades essays — always for teacher review. Billed per use from prepaid credits.</p>
+            <div class="eco-tags">
+              <span>Claude API</span><span>Laravel</span>
             </div>
           </div>
 
@@ -173,12 +170,12 @@
                 <path d="M6 20v-4" />
               </svg>
             </div>
-            <h3 class="eco-title">Super Admin</h3>
-            <p class="eco-desc">Centralized dashboard for managing the entire school network. Orchestrates collaborative
-              multi-institution exam events, aggregates leaderboard data in real-time, and generates cross-school
-              analytical reports.</p>
+            <h3 class="eco-title">Admin Panel</h3>
+            <p class="eco-desc">One Filament app for EXSAO, SENCURA, and Kaasir: orders, invoices, payments, licenses,
+              app releases, bug reports, and school server monitoring. Moved payments from Midtrans to Mayar without
+              losing unpaid invoices.</p>
             <div class="eco-tags">
-              <span>Laravel</span><span>Vue.js</span><span>Chart.js</span><span>HMAC Auth</span>
+              <span>Laravel</span><span>Filament</span><span>Mayar</span>
             </div>
           </div>
 
@@ -192,20 +189,20 @@
 
         <div class="highlights-list">
           <div class="highlight-item">
-            <span class="highlight-number" data-count="600" data-suffix="+">0</span>
-            <span class="highlight-text">Concurrent exam sessions handled without data loss</span>
+            <span class="highlight-number" data-count="600" data-suffix="">0</span>
+            <span class="highlight-text">Students in a single exam on one server, in production</span>
           </div>
           <div class="highlight-item">
             <span class="highlight-number" data-count="11" data-suffix="">0</span>
-            <span class="highlight-text">School tenants orchestrated in a single collaborative event</span>
+            <span class="highlight-text">Schools in the joint tryout where it all started</span>
           </div>
           <div class="highlight-item">
-            <span class="highlight-number" data-prefix="~" data-count="2" data-suffix="s">0</span>
-            <span class="highlight-text">Auto-save interval with database-level row locking</span>
+            <span class="highlight-number" data-count="109" data-suffix="">0</span>
+            <span class="highlight-text">Playwright end-to-end tests</span>
           </div>
           <div class="highlight-item">
-            <span class="highlight-number" data-count="0" data-suffix="">0</span>
-            <span class="highlight-text">Answers lost during peak concurrent submission</span>
+            <span class="highlight-number" data-prefix="≤" data-count="20" data-suffix="m">0</span>
+            <span class="highlight-text">From payment to a school's own provisioned server</span>
           </div>
         </div>
       </div>
@@ -214,16 +211,15 @@
     <section class="project-detail-section cta-section">
       <div class="container cta-inner">
         <h2 class="cta-heading">Want to see it in action<span class="accent">?</span></h2>
-        <p class="cta-sub">Exsao is live and actively serving schools across East Java. If you'd like a hands-on demo, I
-          can spin up a dedicated testing tenant for you — complete with sample exams, student accounts, and the full
-          admin dashboard.</p>
+        <p class="cta-sub">EXSAO is live and rented to schools. Start a trial from the product site, or reach out and
+          I'll walk you through it.</p>
         <div class="cta-buttons">
-          <a href="mailto:imamafandy04@gmail.com?subject=Exsao%20Demo%20Request&body=Hi%20Fandy%2C%0A%0AI'd%20like%20to%20request%20a%20demo%20tenant%20for%20testing%20Exsao.%0A%0AName%3A%20%0ACompany%3A%20%0ARole%3A%20%0A%0AThanks!"
+          <a href="mailto:imamafandy04@gmail.com?subject=EXSAO%20Demo%20Request&body=Hi%20Fandy%2C%0A%0AI'd%20like%20a%20demo%20of%20EXSAO.%0A%0AName%3A%20%0ASchool%2FCompany%3A%20%0ARole%3A%20%0A%0AThanks!"
             class="cta-btn primary magnetic">
-            Request Demo Access
+            Request a Demo
           </a>
-          <a href="https://exsao.xyz" target="_blank" rel="noopener" class="cta-btn secondary magnetic">
-            Visit Landing Page ↗
+          <a href="https://fandika.my.id" target="_blank" rel="noopener" class="cta-btn secondary magnetic">
+            Visit fandika.my.id ↗
           </a>
         </div>
       </div>
