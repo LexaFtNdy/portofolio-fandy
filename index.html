@@ -12,10 +12,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/site.css" />
-  <script>try{sessionStorage.proofed?document.documentElement.classList.add('proofed'):sessionStorage.proofed=1}catch{}</script>
+  <script>try{var d=document.documentElement;sessionStorage.proofed?d.classList.add('proofed'):(sessionStorage.proofed=1,matchMedia('(prefers-reduced-motion: no-preference)').matches&&(d.classList.add('loading'),setTimeout(function(){d.classList.remove('loading')},6e3)))}catch(e){}</script>
 </head>
 
 <body>
+  <div class="make-ready" aria-hidden="true">
+    <div class="mr-sheet">
+      <div class="mr-face">
+        <p class="mr-top"><span>Make-ready, Imam Afandy</span><span class="mr-cap">Out of register</span></p>
+        <span class="reg"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span>
+        <div class="mr-foot"><p class="mr-n">000</p><ol class="mr-bars"><li class="c"></li><li class="m"></li><li class="y"></li><li class="k"></li></ol></div>
+      </div>
+    </div>
+    <i class="mr-pass y"></i><i class="mr-pass m"></i><i class="mr-pass c"></i>
+  </div>
+
   <a class="skip" href="#work">Skip to work</a>
 
   <header class="bar">
@@ -45,7 +56,7 @@
       </div>
 
       <div class="slug">
-        <p class="proof" aria-hidden="true"><span id="proof-n">Proof 4</span>, <span id="proof-s">in register</span></p>
+        <p class="proof" aria-hidden="true"><span id="proof-n">Proof 4</span>, <span id="proof-s">in register</span><span id="proof-hint" hidden>. Click the name for one more</span></p>
         <ol class="colorbar" aria-hidden="true"><li class="c"></li><li class="m"></li><li class="y"></li><li class="k"></li><li class="c m"></li><li class="m y"></li><li class="c y"></li></ol>
       </div>
 
@@ -59,16 +70,20 @@
       </div>
     </section>
 
+    <div class="ticker" aria-hidden="true">
+      <p><span>EXSAO</span><span>Alleandro Honda</span><span>Kaasir</span><span>Kiyura</span><span>SwiftMu</span><span>SENCURA</span><span>One more</span></p>
+    </div>
+
     <section class="work" id="work" aria-labelledby="work-h">
       <header class="work-head">
         <h2 id="work-h">Every project hit a wall. Here is the next attempt.</h2>
         <p>Most of these are live and paid for. Each one had a moment where the obvious version stopped working.</p>
       </header>
 
-      <article class="job">
+      <article class="job job-lead">
         <div class="job-text">
           <p class="job-meta"><time>Feb 2026</time> to now, founder</p>
-          <h3>EXSAO</h3>
+          <h3 style="view-transition-name: t-exsao">EXSAO</h3>
           <p class="job-what">Online exam platform rented to schools, one server per school, set up automatically after payment.</p>
           <dl class="turn">
             <dt>Problem</dt>
@@ -224,10 +239,6 @@
       </h2>
       <p class="close-sub">Open to full-time roles and projects. The fastest way to reach me is email.</p>
       <a class="close-mail" href="mailto:imamafandy04@gmail.com">imamafandy04@gmail.com</a>
-      <p class="actions">
-        <a class="btn btn-ink" href="/cv/Imam-Afandy-CV.pdf" download>Download CV</a>
-        <a class="btn" href="https://github.com/LexaFtNdy" target="_blank" rel="noopener">GitHub</a>
-      </p>
     </section>
   </main>
 
