@@ -2,140 +2,121 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teacher Profile &amp; Madrasah Admin | Fandy</title>
-    <meta name="description" content="Teacher profile site and madrasah administration system, later developed into SENCURA. Built by Fandy." />
-    <meta name="theme-color" content="#0a0a08" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/project-detail.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher profile and madrasah admin | Fandy</title>
+  <meta name="description" content="A teacher's profile site that grew into the admin system a madrasah runs on, and later into SENCURA. Built by Fandy." />
+  <meta name="theme-color" content="#E8EAE6" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/site.css" />
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <div class="loader">
-        <div class="loader-inner">
-            <div class="loader-logo">F.</div>
-            <div class="loader-bar"></div>
-        </div>
-    </div>
-
-    <div class="grain"></div>
-    <div id="cursor-dot"></div>
-    <div id="cursor-ring"></div>
-    <div id="scroll-progress"></div>
-
-    <nav id="nav">
-        <a href="/" class="nav-logo magnetic">F.</a>
-        <div class="nav-links">
-            <a href="/" class="nav-link">← Back</a>
-            <a href="/it-support.html" class="nav-link">IT Support</a>
-            <a href="https://github.com/LexaFtNdy" target="_blank" rel="noopener" class="nav-link nav-icon"
-                aria-label="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path
-                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.24c3-.34 6-1.53 6-6.76a5.2 5.2 0 0 0-1.5-3.8 5.3 5.3 0 0 0-.1-3.8s-1.2-.38-3.9 1.4a13.4 13.4 0 0 0-7 0c-2.7-1.78-3.9-1.4-3.9-1.4a5.3 5.3 0 0 0-.1 3.8A5.2 5.2 0 0 0 3 12c0 5.22 3 6.42 6 6.76a4.8 4.8 0 0 0-1 3.24v4">
-                    </path>
-                </svg>
-            </a>
-        </div>
+  <header class="bar">
+    <a href="/" class="bar-name">Fandy</a>
+    <nav class="bar-nav" aria-label="Main">
+      <a href="/#work">Work</a>
+      <a href="/it-support.html">IT support</a>
+      <a href="/cv/Imam-Afandy-CV.pdf" download>CV</a>
+      <a href="https://github.com/LexaFtNdy" target="_blank" rel="noopener">GitHub</a>
     </nav>
+  </header>
 
-    <main>
-        <section class="project-hero">
-            <div class="hero-glow"></div>
-            <div class="container">
-                <span class="section-label">Freelance Project</span>
-                <h1 class="project-hero-title">Teacher Profile<span class="accent">.</span></h1>
-                <p class="project-hero-tagline">Profile Site &amp; Madrasah Administration</p>
-                <p class="project-hero-desc">Started as a teacher's personal profile and CMS. Grew into the admin system
-                    the madrasah runs on — and later into SENCURA.</p>
-            </div>
-        </section>
+  <main id="main">
+    <section class="page-head" aria-labelledby="title">
+      <div class="press" data-lock>
+        <span class="reg reg-tl" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span>
+        <span class="reg reg-tr" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span>
+        <h1 class="title" id="title">
+          <span class="sr">Teacher profile</span>
+          <span class="plate c" aria-hidden="true">Teacher profile</span>
+          <span class="plate m" aria-hidden="true">Teacher profile</span>
+          <span class="plate y" aria-hidden="true">Teacher profile</span>
+          <span class="plate k" aria-hidden="true">Teacher profile</span>
+        </h1>
+        <span class="reg reg-bl" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span>
+        <span class="reg reg-br" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span>
+      </div>
 
-        <div class="container project-image-container">
-            <img src="/img/WebProfile/image.png" alt="Teacher Profile Screenshot" class="project-screenshot" />
+      <div class="intro">
+        <p class="lede">It started as one teacher's profile site. It grew into the admin system the madrasah runs on, and later into SENCURA.</p>
+        <dl class="ticket">
+          <dt>Role</dt><dd>Freelance developer</dd>
+          <dt>Status</dt><dd>Live at halopakaziz.com</dd>
+          <dt>Stack</dt><dd>NestJS, Prisma, PostgreSQL, Nuxt, Docker</dd>
+        </dl>
+      </div>
+    </section>
+
+    <figure class="sheet lead-sheet">
+      <img src="/img/WebProfile/thumb.webp" alt="Hero of halopakaziz.com: Abdul Aziz Fitroni on stage at a madrasah graduation, with his name as the headline" width="1200" height="604" />
+      <figcaption>Hero of the public profile site</figcaption>
+    </figure>
+
+    <section class="story" aria-label="How it got here">
+      <div class="row">
+        <h2>The brief</h2>
+        <p>A profile site for a teacher: articles, rich text, and Open Graph tags so every page shares cleanly on social media, all managed from an admin dashboard.</p>
+      </div>
+      <div class="row row-wall">
+        <h2>The wall</h2>
+        <p>Then the paperwork moved in. Teaching plans from the school calendar, a grade book that has to keep working when the connection drops, report cards, attendance, and updates for parents.</p>
+      </div>
+      <div class="row row-more">
+        <h2>One more</h2>
+        <p>The grade book got an offline input queue, attendance went to QR codes, and parents get updates on WhatsApp and Telegram. The madrasah's administration runs on it now. Every school has the same paperwork, so I rebuilt the idea as a product: SENCURA, curriculum administration paired with EXSAO.</p>
+      </div>
+    </section>
+
+    <section class="parts" aria-labelledby="parts-h">
+      <h2 class="section-h" id="parts-h">How it is built</h2>
+      <dl class="kit-list pairs">
+        <div>
+          <dt>Backend</dt>
+          <dd>NestJS API with Prisma on PostgreSQL, handling content, school administration data and parent notifications.
+            <p class="tags">NestJS, Prisma, PostgreSQL</p></dd>
         </div>
-
-        <section class="project-detail-section">
-            <div class="container">
-                <div class="detail-block">
-                    <span class="detail-label">The Start</span>
-                    <p class="detail-text">The brief was a profile site for a teacher: articles, rich text, and OG meta
-                        tags so every page shares cleanly on social media, all managed from an admin dashboard.</p>
-                </div>
-                <div class="detail-block">
-                    <span class="detail-label">The Growth</span>
-                    <p class="detail-text">Then the paperwork moved in. Teaching plans generated from the school
-                        calendar, a grade book with an offline input queue for flaky connections, report cards, QR
-                        attendance, and WhatsApp/Telegram notifications for parents. The madrasah's administration now
-                        runs on it.</p>
-                </div>
-                <div class="detail-block">
-                    <span class="detail-label">What Came Next</span>
-                    <p class="detail-text">Every school has the same paperwork, so I rebuilt the idea as a product:
-                        SENCURA, curriculum administration paired with EXSAO.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="project-detail-section ecosystem-section">
-            <div class="container">
-                <span class="section-label">Tech Stack</span>
-                <div class="ecosystem-grid">
-                    <div class="eco-card">
-                        <h3 class="eco-title">Backend</h3>
-                        <p class="eco-desc">NestJS API with Prisma on PostgreSQL, handling content, school
-                            administration data, and parent notifications.</p>
-                        <div class="eco-tags"><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span></div>
-                    </div>
-                    <div class="eco-card">
-                        <h3 class="eco-title">Frontend</h3>
-                        <p class="eco-desc">Public profile site in Nuxt with server-rendered OG tags, plus a separate
-                            admin app for content and school administration.</p>
-                        <div class="eco-tags"><span>Nuxt</span><span>Vue.js</span><span>Tailwind CSS</span></div>
-                    </div>
-                    <div class="eco-card">
-                        <h3 class="eco-title">Infrastructure</h3>
-                        <p class="eco-desc">Containerized with Docker on a small VPS, Caddy as reverse proxy with
-                            automatic HTTPS, and scheduled backups.</p>
-                        <div class="eco-tags"><span>Docker</span><span>Caddy</span><span>VPS</span></div>
-                    </div>
-                    <div class="eco-card">
-                        <h3 class="eco-title">Integrations</h3>
-                        <p class="eco-desc">Parent updates over WhatsApp and Telegram, QR codes for attendance.</p>
-                        <div class="eco-tags"><span>WhatsApp</span><span>Telegram Bot API</span><span>QR</span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="project-detail-section cta-section">
-            <div class="container cta-inner">
-                <h2 class="cta-heading">Visit the Website<span class="accent">.</span></h2>
-                <p class="cta-sub">The public profile site is live.</p>
-                <div class="cta-buttons">
-                    <a href="https://halopakaziz.com" target="_blank" rel="noopener" class="cta-btn primary magnetic">
-                        Visit halopakaziz.com ↗
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <div class="container footer-inner">
-            <p>&copy; 2026 Fandy</p>
+        <div>
+          <dt>Frontend</dt>
+          <dd>Public profile site in Nuxt with server-rendered Open Graph tags, plus a separate admin app for content and school administration.
+            <p class="tags">Nuxt, Vue, Tailwind CSS</p></dd>
         </div>
-    </footer>
-    <script type="module" src="/main.js"></script>
+        <div>
+          <dt>Infrastructure</dt>
+          <dd>Docker on a small VPS, Caddy as the reverse proxy with automatic HTTPS, and scheduled backups.
+            <p class="tags">Docker, Caddy, VPS</p></dd>
+        </div>
+        <div>
+          <dt>Integrations</dt>
+          <dd>Parent updates over WhatsApp and Telegram, and QR codes for attendance.
+            <p class="tags">WhatsApp, Telegram Bot API, QR</p></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="close" aria-labelledby="close-h">
+      <h2 class="section-h" id="close-h">The profile site is live.</h2>
+      <p class="close-sub">The admin side stays private to the madrasah.</p>
+      <p class="actions">
+        <a class="btn btn-ink" href="https://halopakaziz.com" target="_blank" rel="noopener">Visit halopakaziz.com</a>
+        <a class="btn" href="mailto:imamafandy04@gmail.com">Email me</a>
+      </p>
+    </section>
+
+    <a class="next" href="/projects/exsao.html"><span>Next case study</span><strong>EXSAO</strong></a>
+  </main>
+
+  <footer class="foot">
+    <p>&copy; 2026 Imam Afandy</p>
+    <ol class="colorbar" aria-hidden="true"><li class="c"></li><li class="m"></li><li class="y"></li><li class="k"></li></ol>
+  </footer>
+
+  <script type="module" src="/site.js"></script>
 </body>
 
 </html>

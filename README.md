@@ -1,6 +1,6 @@
 # Fandy — Personal Portfolio
 
-> Minimalist, cinematic portfolio website built with **Vanilla JS**, **CSS3**, and **GSAP**. Designed with a dark editorial aesthetic, custom cursor, film grain overlay, and scroll-triggered animations.
+> Portfolio site built with **Vanilla JS**, **CSS**, and **GSAP**, designed as a print proof: four process inks overprint on paper and line up into register.
 
 ## ⚠️ Disclaimer
 This repository is **NOT** an open-source project. It is made public strictly for portfolio and demonstration purposes only. All rights are reserved.
@@ -11,20 +11,17 @@ This repository is **NOT** an open-source project. It is made public strictly fo
 |---|---|
 | Language | Vanilla JavaScript (ES Modules) |
 | Styling | Custom CSS3 (no frameworks) |
-| Animations | GSAP + ScrollTrigger |
-| Typography | Inter + Playfair Display (Google Fonts) |
+| Animations | GSAP |
+| Typography | Bricolage Grotesque (Google Fonts) |
 | Build | Vite |
 
 ## Highlights
 
-- **Cinematic Loader** — Animated entry with logo reveal and progress bar
-- **Custom Cursor** — Dual-element magnetic cursor with hover scaling effects
-- **Film Grain Overlay** — Subtle texture layer for editorial feel
-- **Scroll Progress Bar** — Real-time scroll indicator
-- **Section Reveal Animations** — Staggered entrance effects on About, Work, and Contact sections
-- **Project Showcase** — Cards for EXSAO, SENCURA, Kaasir, Kiyura, SwiftMu Tools, a freelance madrasah platform, and SAO, with detail pages for EXSAO and the madrasah platform
-- **IT Support** — Photo showcase page with bento grid and lightbox
-- **Responsive Design** — Mobile-first with fluid typography
+- **Press proof hero** — the name is pulled through four proofs until the CMYK plates line up, then drifts with the pointer
+- **Case studies** — EXSAO and the teacher profile site, with titles that lock into register on load
+- **IT support contact sheet** — 32 numbered frames on film strips, a grease-pencil circle on picks, and a native `<dialog>` loupe
+- **One stylesheet, one script** — `site.css` and `site.js` shared by every page
+- **Accessible by default** — reduced motion respected, keyboard focus visible, works without JavaScript
 
 ## Featured Projects
 

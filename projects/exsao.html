@@ -4,236 +4,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EXSAO — Online Exam Platform | Fandy</title>
-  <meta name="description"
-    content="Online exam platform for schools: one server per school, Tauri and Capacitor clients, and the Lexa AI assistant. Built by Fandy." />
-  <meta name="theme-color" content="#0a0a08" />
+  <title>EXSAO, online exams for schools | Fandy</title>
+  <meta name="description" content="EXSAO: online exam platform rented to schools, one server per school, with desktop and Android clients and the Lexa AI assistant. Built by Fandy." />
+  <meta name="theme-color" content="#E8EAE6" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="/project-detail.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/site.css" />
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <div class="loader">
-    <div class="loader-inner">
-      <div class="loader-logo">F.</div>
-      <div class="loader-bar"></div>
+  <header class="bar">
+    <a href="/" class="bar-name">Fandy</a>
+    <nav class="bar-nav" aria-label="Main">
+      <a href="/#work">Work</a>
+      <a href="/it-support.html">IT support</a>
+      <a href="/cv/Imam-Afandy-CV.pdf" download>CV</a>
+      <a href="https://github.com/LexaFtNdy" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-head" aria-labelledby="title">
+      <div class="press" data-lock>
+        <span class="reg reg-tl" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span>
+        <span class="reg reg-tr" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span>
+        <h1 class="title" id="title">
+          <span class="sr">EXSAO</span>
+          <span class="plate c" aria-hidden="true">EXSAO</span>
+          <span class="plate m" aria-hidden="true">EXSAO</span>
+          <span class="plate y" aria-hidden="true">EXSAO</span>
+          <span class="plate k" aria-hidden="true">EXSAO</span>
+        </h1>
+        <span class="reg reg-bl" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span>
+        <span class="reg reg-br" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span>
+      </div>
+
+      <div class="intro">
+        <p class="lede">Online exams for schools, built to hold when the whole class presses Submit in the same second. Schools rent it monthly, and each one gets its own server.</p>
+        <dl class="ticket">
+          <dt>Role</dt><dd>Founder</dd>
+          <dt>Since</dt><dd><time>Feb 2026</time>, live now</dd>
+          <dt>Stack</dt><dd>Laravel, Vue, Inertia.js, MySQL, Tauri, Capacitor, Claude API</dd>
+        </dl>
+      </div>
+    </section>
+
+    <figure class="sheet lead-sheet">
+      <img src="/img/Exsao/admin-dashboard.webp" alt="EXSAO admin dashboard" width="1200" height="750" />
+      <figcaption>Admin dashboard</figcaption>
+    </figure>
+
+    <section class="story" aria-label="How it got here">
+      <div class="row">
+        <h2>Where it started</h2>
+        <p>EXSAO began as the exam system for the KKMI Kemenag Surabaya joint tryout across 11 schools. One event, one web app, hundreds of students at once. It worked, and every school in the region had the same problem.</p>
+      </div>
+      <div class="row row-wall">
+        <h2>The wall</h2>
+        <p>Schools need exams that stay up when everyone submits at once, keep questions from leaking, and keep answers when the school Wi-Fi drops. After the exam they need to know which questions were bad, not only who scored what.</p>
+      </div>
+      <div class="row row-more">
+        <h2>One more</h2>
+        <p>I turned it into a product schools rent monthly. Each school gets its own VPS and database, set up automatically after payment, usually in 10 to 20 minutes. Servers pull updates on a schedule, hold them while an exam is running, and dump the database before every migration. Around it sit locked-down desktop and Android clients, an AI assistant for teachers, and one admin panel that runs the business.</p>
+      </div>
+    </section>
+
+    <div class="gallery">
+      <figure class="sheet">
+        <img src="/img/Exsao/guru-buat-soal.webp" alt="Teacher writing exam questions" width="1200" height="750" loading="lazy" />
+        <figcaption>Writing questions</figcaption>
+      </figure>
+      <figure class="sheet">
+        <img src="/img/Exsao/guru-analisis-butir.webp" alt="Item analysis after an exam" width="1200" height="750" loading="lazy" />
+        <figcaption>Item analysis after the exam</figcaption>
+      </figure>
+      <figure class="sheet">
+        <img src="/img/Exsao/admin-monitor-langsung.webp" alt="Live monitoring of a running exam" width="1200" height="750" loading="lazy" />
+        <figcaption>Live exam monitoring</figcaption>
+      </figure>
+      <figure class="sheet">
+        <img src="/img/Exsao/ujian-03-soal-pertama.webp" alt="Student exam screen on the first question" width="1200" height="750" loading="lazy" />
+        <figcaption>What the student sees</figcaption>
+      </figure>
     </div>
-  </div>
 
-  <div class="grain"></div>
-
-  <div id="cursor-dot"></div>
-  <div id="cursor-ring"></div>
-  <div id="scroll-progress"></div>
-
-  <nav id="nav">
-    <a href="/" class="nav-logo magnetic">F.</a>
-    <div class="nav-links">
-      <a href="/" class="nav-link">← Back</a>
-      <a href="/it-support.html" class="nav-link">IT Support</a>
-      <a href="https://github.com/LexaFtNdy" target="_blank" rel="noopener" class="nav-link nav-icon"
-        aria-label="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path
-            d="M15 22v-4a4.8 4.8 0 0 0-1-3.24c3-.34 6-1.53 6-6.76a5.2 5.2 0 0 0-1.5-3.8 5.3 5.3 0 0 0-.1-3.8s-1.2-.38-3.9 1.4a13.4 13.4 0 0 0-7 0c-2.7-1.78-3.9-1.4-3.9-1.4a5.3 5.3 0 0 0-.1 3.8A5.2 5.2 0 0 0 3 12c0 5.22 3 6.42 6 6.76a4.8 4.8 0 0 0-1 3.24v4">
-          </path>
-        </svg>
-      </a>
-    </div>
-  </nav>
-
-  <main>
-
-    <section class="project-hero">
-      <div class="hero-glow"></div>
-      <div class="container">
-        <span class="section-label">Featured Project</span>
-        <h1 class="project-hero-title">EXSAO<span class="accent">.</span></h1>
-        <p class="project-hero-tagline">Online Exam Platform for Schools</p>
-        <p class="project-hero-desc">Built to survive hundreds of students clicking "Submit" in the same second — now
-          rented to schools monthly, with one server per school.</p>
-      </div>
+    <section class="parts" aria-labelledby="parts-h">
+      <h2 class="section-h" id="parts-h">Four parts, one product</h2>
+      <dl class="kit-list pairs">
+        <div>
+          <dt>Exam server</dt>
+          <dd>Runs on each school's own VPS. Item analysis (difficulty, discrimination, distractors, KR-20), a rule-based engine that flags suspect answer keys and misconceptions and proposes remedial tests, answer key challenges with score recalculation, Word and PDF question import, and joint tryouts across schools with a combined ranking.
+            <p class="tags">Laravel, Vue, Inertia.js, MySQL</p></dd>
+        </div>
+        <div>
+          <dt>Exam clients</dt>
+          <dd>Tauri desktop app and Capacitor Android app with kiosk mode and screenshot blocking. Attendance by a QR code that changes every 30 seconds, exam documents verifiable by QR, and answers recovered on the device when the connection drops.
+            <p class="tags">Tauri, Rust, Capacitor, Vue</p></dd>
+        </div>
+        <div>
+          <dt>Lexa</dt>
+          <dd>A Claude API assistant that drafts questions, test blueprints and explanations, checks answer keys and grades essays, always for a teacher to review. Billed per use from prepaid credits.
+            <p class="tags">Claude API, Laravel</p></dd>
+        </div>
+        <div>
+          <dt>Admin panel</dt>
+          <dd>One Filament app for EXSAO, SENCURA and Kaasir: orders, invoices, payments, licenses, app releases, bug reports and school server monitoring. Payments moved from Midtrans to Mayar without losing unpaid invoices.
+            <p class="tags">Laravel, Filament, Mayar</p></dd>
+        </div>
+      </dl>
     </section>
 
-    <div class="container project-image-container">
-      <img src="/img/Exsao/admin-dashboard.webp" alt="EXSAO admin dashboard" class="project-screenshot" />
-    </div>
+    <dl class="counts" aria-label="In numbers">
+      <div><dt>students in one exam on one server, in production</dt><dd>600</dd></div>
+      <div><dt>schools in the joint tryout where it started</dt><dd>11</dd></div>
+      <div><dt>Playwright end-to-end tests</dt><dd>109</dd></div>
+      <div><dt>or less, from payment to a school's own server</dt><dd>20 min</dd></div>
+    </dl>
 
-    <div class="container project-gallery">
-      <img src="/img/Exsao/guru-buat-soal.webp" alt="Teacher writing questions" loading="lazy" />
-      <img src="/img/Exsao/guru-analisis-butir.webp" alt="Item analysis after an exam" loading="lazy" />
-      <img src="/img/Exsao/admin-monitor-langsung.webp" alt="Live exam monitoring" loading="lazy" />
-      <img src="/img/Exsao/ujian-03-soal-pertama.webp" alt="Student exam screen" loading="lazy" />
-    </div>
-
-    <section class="project-detail-section">
-      <div class="container">
-
-        <div class="detail-block">
-          <span class="detail-label">The Origin</span>
-          <p class="detail-text">EXSAO started as the exam system for KKMI Kemenag Surabaya's joint tryout across 11
-            schools. One event, one web app, hundreds of students at once. It worked — and every school in the region
-            had the same problem.</p>
-        </div>
-
-        <div class="detail-block">
-          <span class="detail-label">The Problem</span>
-          <p class="detail-text">Schools need exams that don't fall over when the whole class submits at once, don't
-            leak questions, and don't lose answers when the school Wi-Fi drops. They also need to know which questions
-            were bad after the exam, not just who scored what.</p>
-        </div>
-
-        <div class="detail-block">
-          <span class="detail-label">The Evolution</span>
-          <p class="detail-text">I turned it into a product schools rent monthly. Each school gets its own VPS and
-            database, provisioned automatically after payment — usually in 10–20 minutes. Servers pull updates via
-            cron, postpone them while an exam is running, and dump the database before each migration. Around it I
-            built locked-down desktop and Android clients, an AI assistant for teachers, and one admin panel that runs
-            the whole business.</p>
-        </div>
-
-      </div>
+    <section class="close" aria-labelledby="close-h">
+      <h2 class="section-h" id="close-h">Want to see it run?</h2>
+      <p class="close-sub">EXSAO is live and rented to schools. Start a trial from the product site, or email me for a walkthrough.</p>
+      <p class="actions">
+        <a class="btn btn-ink" href="mailto:imamafandy04@gmail.com?subject=EXSAO%20demo&body=Hi%20Fandy%2C%0A%0AI'd%20like%20a%20demo%20of%20EXSAO.%0A%0AName%3A%20%0ASchool%3A%20%0ARole%3A%20">Ask for a demo</a>
+        <a class="btn" href="https://fandika.my.id" target="_blank" rel="noopener">Visit fandika.my.id</a>
+      </p>
     </section>
 
-    <section class="project-detail-section ecosystem-section">
-      <div class="container">
-        <span class="section-label">The Ecosystem</span>
-
-        <div class="ecosystem-grid">
-
-          <div class="eco-card">
-            <div class="eco-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="3" width="20" height="14" rx="2" />
-                <line x1="8" y1="21" x2="16" y2="21" />
-                <line x1="12" y1="17" x2="12" y2="21" />
-              </svg>
-            </div>
-            <h3 class="eco-title">Exam Server</h3>
-            <p class="eco-desc">Runs on each school's own VPS. Item analysis (difficulty, discrimination, distractors,
-              KR-20), a rule-based engine that flags suspect answer keys and misconceptions and proposes remedial
-              tests, answer key challenges with score recalculation, Word/PDF question import, and multi-school joint
-              tryouts with a combined ranking.</p>
-            <div class="eco-tags">
-              <span>Laravel</span><span>Vue.js</span><span>Inertia</span><span>MySQL</span>
-            </div>
-          </div>
-
-          <div class="eco-card">
-            <div class="eco-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
-                <line x1="12" y1="18" x2="12.01" y2="18" />
-              </svg>
-            </div>
-            <h3 class="eco-title">Exam Clients</h3>
-            <p class="eco-desc">Tauri desktop app and Capacitor Android app with kiosk mode and screenshot blocking.
-              30-second rotating QR attendance, QR-verifiable exam documents, and local answer recovery when the
-              connection drops.</p>
-            <div class="eco-tags">
-              <span>Tauri</span><span>Rust</span><span>Capacitor</span><span>Vue.js</span>
-            </div>
-          </div>
-
-          <div class="eco-card">
-            <div class="eco-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3l1.9 5.8L20 10l-6.1 1.2L12 17l-1.9-5.8L4 10l6.1-1.2z" />
-                <path d="M19 17l.7 2.3L22 20l-2.3.7L19 23l-.7-2.3L16 20l2.3-.7z" />
-              </svg>
-            </div>
-            <h3 class="eco-title">Lexa</h3>
-            <p class="eco-desc">Claude API assistant that drafts questions, test blueprints, and explanations, checks
-              answer keys, and grades essays — always for teacher review. Billed per use from prepaid credits.</p>
-            <div class="eco-tags">
-              <span>Claude API</span><span>Laravel</span>
-            </div>
-          </div>
-
-          <div class="eco-card">
-            <div class="eco-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 20V10" />
-                <path d="M18 20V4" />
-                <path d="M6 20v-4" />
-              </svg>
-            </div>
-            <h3 class="eco-title">Admin Panel</h3>
-            <p class="eco-desc">One Filament app for EXSAO, SENCURA, and Kaasir: orders, invoices, payments, licenses,
-              app releases, bug reports, and school server monitoring. Moved payments from Midtrans to Mayar without
-              losing unpaid invoices.</p>
-            <div class="eco-tags">
-              <span>Laravel</span><span>Filament</span><span>Mayar</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="project-detail-section">
-      <div class="container">
-        <span class="section-label">Technical Highlights</span>
-
-        <div class="highlights-list">
-          <div class="highlight-item">
-            <span class="highlight-number" data-count="600" data-suffix="">0</span>
-            <span class="highlight-text">Students in a single exam on one server, in production</span>
-          </div>
-          <div class="highlight-item">
-            <span class="highlight-number" data-count="11" data-suffix="">0</span>
-            <span class="highlight-text">Schools in the joint tryout where it all started</span>
-          </div>
-          <div class="highlight-item">
-            <span class="highlight-number" data-count="109" data-suffix="">0</span>
-            <span class="highlight-text">Playwright end-to-end tests</span>
-          </div>
-          <div class="highlight-item">
-            <span class="highlight-number" data-prefix="≤" data-count="20" data-suffix="m">0</span>
-            <span class="highlight-text">From payment to a school's own provisioned server</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="project-detail-section cta-section">
-      <div class="container cta-inner">
-        <h2 class="cta-heading">Want to see it in action<span class="accent">?</span></h2>
-        <p class="cta-sub">EXSAO is live and rented to schools. Start a trial from the product site, or reach out and
-          I'll walk you through it.</p>
-        <div class="cta-buttons">
-          <a href="mailto:imamafandy04@gmail.com?subject=EXSAO%20Demo%20Request&body=Hi%20Fandy%2C%0A%0AI'd%20like%20a%20demo%20of%20EXSAO.%0A%0AName%3A%20%0ASchool%2FCompany%3A%20%0ARole%3A%20%0A%0AThanks!"
-            class="cta-btn primary magnetic">
-            Request a Demo
-          </a>
-          <a href="https://fandika.my.id" target="_blank" rel="noopener" class="cta-btn secondary magnetic">
-            Visit fandika.my.id ↗
-          </a>
-        </div>
-      </div>
-    </section>
-
+    <a class="next" href="/projects/web-profile.html"><span>Next case study</span><strong>Teacher profile</strong></a>
   </main>
 
-  <footer id="footer">
-    <div class="container footer-inner">
-      <p>&copy; 2026 Fandy</p>
-    </div>
+  <footer class="foot">
+    <p>&copy; 2026 Imam Afandy</p>
+    <ol class="colorbar" aria-hidden="true"><li class="c"></li><li class="m"></li><li class="y"></li><li class="k"></li></ol>
   </footer>
 
-  <script type="module" src="/main.js"></script>
+  <script type="module" src="/site.js"></script>
 </body>
 
 </html>
